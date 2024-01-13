@@ -107,6 +107,8 @@ p{
 
     .experience-container{
         display: flex;
+        padding: 70px 70px 0px 70px;
+        
     }
     h4{
         font-size: 1.25rem;
@@ -114,6 +116,29 @@ p{
     }
 
     /* experience part start here*/
+
+    /* card section start here */
+    .facts-container{
+        padding: 70px;
+    }
+    .facts-card-container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card{
+        border-radius: 8px;
+        border: 1px solid #FF900E;
+        text-align: center;
+        padding: 30px 30px;
+    }
+    .card h2{
+        color: #424242;
+    }
+   .card>img h2 p{
+        margin: 5px;
+    }
+/* card section end here */
 
 /*responsive part start*/
 
@@ -150,4 +175,15 @@ p{
     flex-direction: column;
    } 
    
+}
+
+/* card section start here */
+@media screen  and (max-width:576px) {
+    .facts-card-container{
+        flex-direction:column;
+        gap:10px;
+    } 
+    .facts-container{
+        padding: 0;
+    }
 }
